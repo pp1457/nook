@@ -15,7 +15,15 @@ FetchContent_Declare(ftxui
 )
 FetchContent_MakeAvailable(ftxui)
 
-add_executable(nook src/main.cpp)
+add_executable(nook 
+  src/main.cpp
+  src/home_screen.cpp
+  src/entry.cpp
+  src/vim_config.cpp
+)#
+
+target_include_directories(nook PRIVATE src)
+
 target_link_libraries(nook
   PRIVATE
     ftxui::component

@@ -3,13 +3,10 @@
 
 namespace fs = std::filesystem;
 
-void EnsureConfigExists(const fs::path& nook_dir) {
-  fs::path config_dir = nook_dir / "config";
+void EnsureVimrcExists(const fs::path& config_dir) {
   fs::path vimrc_path = config_dir / "vimrc";
   
   if (fs::exists(vimrc_path)) return;
-  
-  fs::create_directories(config_dir);
   
   std::ofstream f(vimrc_path);
   if (!f) return;  // failed to open for writing

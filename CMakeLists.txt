@@ -20,6 +20,7 @@ add_executable(nook
   src/home_screen.cpp
   src/entry.cpp
   src/vim_config.cpp
+  src/menu.cpp
 )#
 
 target_include_directories(nook PRIVATE src)

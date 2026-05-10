@@ -1,4 +1,7 @@
 #pragma once
+
 #include <ftxui/dom/elements.hpp>
 
-ftxui::Element home_screen();
+#include "entry.hpp"
+
+ftxui::Element home_screen(ftxui::Element recently_section);

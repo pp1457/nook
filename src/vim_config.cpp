@@ -74,6 +74,7 @@ set noruler
 set noshowmode
 set noshowcmd
 set shortmess+=IF
+set clipboard=unnamed
 
 " replace tildes on empty lines with spaces
 set fillchars=eob:\ 

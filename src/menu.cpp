@@ -23,7 +23,7 @@ std::vector<std::string> GetDisplayNames(std::vector<Entry> entries) {
 
   for (auto entry: entries) {
     std::tm tm = *std::localtime(&entry.create_time);
-    std::string title = entry.title + (entry.title.size() > 50 ? "..." : "");
+    std::string title = entry.title.substr(0, 65) + (entry.title.size() > 65 ? "..." : "");
     display_names.push_back(std::format("{:<25} {}", display_date(tm), title));
   }
 

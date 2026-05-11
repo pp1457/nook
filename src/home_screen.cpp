@@ -54,7 +54,7 @@ Element home_screen(Element recently_section) {
       hbox({
         text("    "),
         vbox({
-          text("Coming Soon"),
+          text("coming soon"),
         }) | color(dim_color)
       }),
       text(""),
@@ -64,7 +64,7 @@ Element home_screen(Element recently_section) {
       hbox({
         text("    "),
         vbox({
-          text("Coming Soon"),
+          text("coming soon"),
         }) | color(dim_color)
       }),
       filler(),

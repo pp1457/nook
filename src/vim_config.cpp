@@ -104,7 +104,7 @@ set laststatus=0
 " --- header (tabline + winbar for two rows of space) ---
 
 set showtabline=2
-set tabline=%#TabLineFill#%=%#TabLine#\ %{strftime(\"%a\ %b\ %d\")}\ %#TabLineFill#%=
+set tabline=%#TabLineFill#
 
 " --- cursor shape changes by mode ---
 

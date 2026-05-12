@@ -36,7 +36,6 @@ void OpenInVim(ScreenInteractive& screen, fs::path entry_path, fs::path vimrc_pa
       std::cout << "\033]11;#1c1612\007" << std::flush;
       std::cout << "\033[2J\033[H" << std::flush;
       std::system(command.c_str());
-      std::cout << "\033]111\007" << std::flush;
     })();
 
     if (fs::exists(entry_path) && fs::file_size(entry_path) == 0) {
@@ -122,7 +121,9 @@ int main() {
     return true;
   });
 
+  std::cout << "\033]11;#1c1612\007" << std::flush;
   screen.Loop(with_keys);
+  std::cout << "\033]111\007" << std::flush;
 
   return 0;
 }

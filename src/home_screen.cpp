@@ -82,5 +82,5 @@ Element home_screen(Element recently_section) {
       text("")
     }) | flex,
     text("    ")
-  }) | bgcolor(bg_color) | flex;
+  }) | bgcolor(bg_color) | flex | size(HEIGHT, EQUAL, 1000) | size(WIDTH, EQUAL, 1000);
 }
